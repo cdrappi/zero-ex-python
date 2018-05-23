@@ -37,7 +37,7 @@ class ZeroEx:
 
     def __init__(self, password=None, relayer='Radar Relay'):
         """
-        :param relayer: (str) a key of ZeroEx.relayer_to_app_url
+        :param relayer: (str) a key of ZeroEx.relayer_to_api_url
         """
         self.app_url = self.relayer_to_api_url[relayer]
         self._private_key = self._decrypt_private_key(password)
